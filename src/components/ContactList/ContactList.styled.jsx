@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const DeleteBtn = styled.button`
   width: 100px;
-  margin-left:15px;
+ 
   padding: 5px 5px;
   font-size: 15px;
   font-weight: 600;
@@ -20,4 +20,7 @@ export const DeleteBtn = styled.button`
 
 export const ContactLi = styled.li`
 margin-bottom:10px;
+display:flex;
+align-items: center;
+justify-content: space-between;
 `

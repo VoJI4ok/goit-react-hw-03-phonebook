@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { DeleteBtn,ContactLi } from './ContactList.styled';
+import { DeleteBtn,ContactLi, } from './ContactList.styled';
 const ContactList = ({ filttredContacts, removeContact }) => {
   return (
     <ul>
