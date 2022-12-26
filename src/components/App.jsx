@@ -14,6 +14,23 @@ export class App extends React.Component {
     ],
     filter: '',
   };
+
+
+  componentDidMount() {
+    const dataParsed = JSON.parse(localStorage.getItem('phoneBook'));
+    if (!dataParsed) return;
+    this.setState({ contacts: dataParsed });
+  }
+  
+    componentDidUpdate(_, prev){
+  if (prev.contacts !== this.state.contacts){
+    
+    localStorage.setItem('phoneBook', JSON.stringify(this.state.contacts));
+  }
+    }
+
+
+
   inputValueForm = e => {
     const { value } = e.target;
 
